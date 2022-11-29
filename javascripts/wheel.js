@@ -106,7 +106,7 @@ var wheel = {
   spinStart: 0,
   timerDelay: 33,
   timerHandle: 0,
-  upTime: 1000,
+  upTime: 100,
 
   spin: function () {
     // Start the wheel only if it's not already spinning
@@ -139,7 +139,7 @@ var wheel = {
 
     wheel.angleCurrent += wheel.angleDelta;
     while (wheel.angleCurrent >= Math.PI * 2)
-      // Keep the angle in a reasonable range
+      
       wheel.angleCurrent -= Math.PI * 2;
 
     if (finished) {
